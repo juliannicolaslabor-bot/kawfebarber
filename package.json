@@ -24,7 +24,5 @@
     "vite": "^5.0.0",
     "@vitejs/plugin-react": "^4.2.0"
   },
-  "engines": {
-    "node": "22.x"
-  }
+  "engines": { "node": "22.x" }
 }
