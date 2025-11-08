@@ -128,9 +128,12 @@ function Home() {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-tr from-violet-500/30 via-fuchsia-500/30 to-blue-500/30 blur-2xl rounded-3xl" />
               <div className="relative rounded-3xl bg-neutral-900 border border-white/10 p-4 md:p-6 shadow-2xl">
-                <div className="aspect-[4/3] rounded-2xl bg-neutral-800 border border-white/10 flex items-center justify-center text-white/60 text-sm md:text-base">
-                  Galerie / Photos du shop
-                </div>
+                <img
+  src="/images/kawfe5.jpg"
+  alt="Photo du shop"
+  className="aspect-[4/3] w-full rounded-2xl object-cover border border-white/10"
+/>
+
                 <div className="mt-3 grid grid-cols-3 gap-2 md:gap-3">
                   {["/images/kawfe1.jpg","/images/kawfe2.jpg","/images/kawfe3.jpg"].map((src,i)=>(
                     <img key={i} src={src} loading="lazy" alt={`galerie ${i+1}`} className="aspect-square rounded-xl object-cover border border-white/10" />
