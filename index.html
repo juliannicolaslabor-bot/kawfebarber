@@ -8,6 +8,24 @@
   </head>
   <body class="bg-neutral-950 text-white">
     <div id="root"></div>
+
+    <!-- App principale -->
     <script type="module" src="src/main.jsx"></script>
+
+    <!-- 🔥 Script Metricool -->
+    <script>
+      function loadScript(a){
+        var b=document.getElementsByTagName("head")[0],
+            c=document.createElement("script");
+        c.type="text/javascript",
+        c.src="https://tracker.metricool.com/resources/be.js",
+        c.onreadystatechange=a,
+        c.onload=a,
+        b.appendChild(c)
+      }
+      loadScript(function(){
+        beTracker.t({hash:"f7061e0adbdb1d7dcadea7552c5a065c"})
+      });
+    </script>
   </body>
 </html>
