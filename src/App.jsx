@@ -265,6 +265,79 @@ function ReviewsPage(){
   return (
     <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="min-h-screen bg-neutral-950 text-white">
       <Navbar />
+      <!-- ===================== AVIS CLIENTS ===================== -->
+<section id="reviews" class="section">
+  <h2 style="font-size:28px;font-weight:800;margin:0 0 12px">Avis clients ⭐⭐⭐⭐⭐</h2>
+
+  <!-- Résumé -->
+  <div class="cards" style="grid-template-columns:repeat(2,1fr); gap:12px; margin-bottom:16px">
+    <div class="card-sm" style="display:flex;align-items:center;gap:10px">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Google_2015_logo.svg" alt="Google" style="height:18px;background:#fff;border-radius:6px;padding:3px">
+      <div><strong>5,0 / 5</strong><div class="p">Basé sur plus de 120 avis Google</div></div>
+    </div>
+    <div class="card-sm" style="display:flex;align-items:center;gap:10px">
+      <div style="height:18px;width:18px;border-radius:4px;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;font-weight:700">P</div>
+      <div><strong>5,0 / 5</strong><div class="p">Note Planity</div></div>
+    </div>
+  </div>
+
+  <!-- Liste d’avis -->
+  <div class="cards">
+    <div class="card-sm">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <strong>Kevin M.</strong><span aria-label="5 étoiles">★★★★★</span>
+      </div>
+      <div class="p">Toujours nickel, dégradé parfait et ambiance top ! On ressort frais 🔥</div>
+      <div class="p" style="opacity:.7;font-size:12px;margin-top:6px">Google • il y a 2 semaines</div>
+    </div>
+
+    <div class="card-sm">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <strong>Ahmed B.</strong><span aria-label="5 étoiles">★★★★★</span>
+      </div>
+      <div class="p">Très pro, accueil au top et résultat toujours impeccable 👌</div>
+      <div class="p" style="opacity:.7;font-size:12px;margin-top:6px">Planity • récent</div>
+    </div>
+
+    <div class="card-sm">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <strong>Lucas P.</strong><span aria-label="5 étoiles">★★★★★</span>
+      </div>
+      <div class="p">Meilleur salon du 95, les gars savent ce qu’ils font. Respect 👊</div>
+      <div class="p" style="opacity:.7;font-size:12px;margin-top:6px">Google • il y a 1 mois</div>
+    </div>
+
+    <div class="card-sm">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <strong>Samir A.</strong><span aria-label="5 étoiles">★★★★★</span>
+      </div>
+      <div class="p">Super équipe, prise de rendez-vous rapide, je recommande à 100% !</div>
+      <div class="p" style="opacity:.7;font-size:12px;margin-top:6px">Planity • il y a 3 semaines</div>
+    </div>
+
+    <div class="card-sm">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <strong>Rayan T.</strong><span aria-label="5 étoiles">★★★★★</span>
+      </div>
+      <div class="p">Salon très propre, ambiance posée et pro. Coup de cœur 🔥</div>
+      <div class="p" style="opacity:.7;font-size:12px;margin-top:6px">Google • il y a 4 jours</div>
+    </div>
+  </div>
+
+  <!-- Boutons -->
+  <div class="btns" style="margin-top:14px">
+    <a class="btn primary" target="_blank"
+       href="https://www.google.com/maps/search/?api=1&query=KAWFE%20Barbershop%20Saint-Ouen-l%E2%80%99Aum%C3%B4ne">
+       Voir tous les avis Google
+    </a>
+    <a class="btn" target="_blank"
+       href="https://www.planity.com/kawfe-95310-saint-ouen-laumone-yu8">
+       Voir sur Planity
+    </a>
+  </div>
+</section>
+<!-- ===================== FIN AVIS CLIENTS ===================== -->
+
       <main className="max-w-6xl mx-auto px-4 py-14 md:py-20">
         <h1 className="text-2xl md:text-4xl font-bold">Avis</h1>
         <p className="text-white/80 mt-2">Merci pour votre confiance !</p>
